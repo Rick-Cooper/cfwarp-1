@@ -650,8 +650,8 @@ yellow " 检测是否成功启动Warp！\n 显示IPV4地址：$(wget -qO- -4 ip.
 green " 如上方显示IPV4地址：8.…………，则说明成功啦！\n 如上方显示VPS本地IP,则说明失败喽！ "
 }
 
-function upcore(){
-wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/jokenee/cfwarp/upcore.sh&& chmod +x upcore.sh && ./upcore.sh
+function updatecore(){
+wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/jokenee/cfwarp/updatecore.sh&& chmod +x updatecore.sh && ./updatecore.sh
 }
 
 function iptables(){
@@ -820,7 +820,7 @@ function start_menu(){
            iptables
 	;;
 	2 )
-           upcore
+           updatecore
 	;;
         3 )
            BBR
